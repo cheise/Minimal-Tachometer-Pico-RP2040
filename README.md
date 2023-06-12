@@ -6,10 +6,10 @@ Minimal Tachometer Raspberry Pico based
 
 What do you need:
 
-A Display, in my case a cheap 12864-06D Display with SPI. Youn can use any other display supported by the U8G2 Library.
+A Display, in my case a cheap 12864-06D Display with SPI. Youn can use any other display supported by the U8G2 Library. ( 3,3V or 3,3V compatible is necessary !!! ).
 https://de.aliexpress.com/item/1005001696187818.html
 
-A MCP2515 cheap CAN-BUS PCB (we must modify PCB from the MCP2515, see the wiki)
+A MCP2515 cheap CAN-BUS PCB ( we must modify PCB from the MCP2515, see the wiki )
 https://de.aliexpress.com/item/32796488204.html
 
 A Raspberry Pico RP2040 MCU Board or Clone
