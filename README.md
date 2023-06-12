@@ -9,7 +9,7 @@ What do you need:
 A Display, in my case a cheap 12864-06D Display with SPI. Youn can use any other display supported by the U8G2 Library.
 https://de.aliexpress.com/item/1005001696187818.html
 
-A MCP2515 cheap CAN-BUS PCB (we must modified the oscillating quartz to 16 Mhz and the PCB from the MCP2515, see below, later)
+A MCP2515 cheap CAN-BUS PCB (we must modified the oscillating quartz to 16 Mhz and the PCB from the MCP2515)
 https://de.aliexpress.com/item/32796488204.html
 
 A Raspberry Pico RP2040 MCU Board or Clone
