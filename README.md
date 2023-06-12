@@ -17,7 +17,7 @@ https://de.aliexpress.com/item/1005003790600416.html
 
 A oscillating quartz 16 Mhz
 
-A Car Power Adapter, normaly used for Cellphone charging or a Stepdown Converter 12V --> 5V.
+A Car Power Adapter, normaly used for cellphone charging or a Stepdown Converter 12V --> 5V.
 
 A 3D Printer (optional) or a universal case for the project.
 
