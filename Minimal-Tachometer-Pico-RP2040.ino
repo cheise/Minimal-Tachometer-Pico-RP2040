@@ -21,7 +21,6 @@ static unsigned char battery_icon[] U8X8_PROGMEM  = {0x86,0xfd,0xff,0xff,0xfb,0x
 #define PID_ENGINE_RPM                0x0C
 #define PID_VEHICLE_SPEED             0x0D
 #define PID_COOLANT_TEMP              0x05
-#define PID_ENGINE_OIL_TEMPERATURE    0x5C
 #define PID_CONTROL_MODULE_VOLTAGE    0x42
 
 U8G2_ST7565_ERC12864_ALT_F_4W_SW_SPI u8g2(U8G2_R0, SCL, SI, CS_LCD, RS, RSE);
