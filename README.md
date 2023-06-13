@@ -30,5 +30,3 @@ Arduino CAN:  https://github.com/sandeepmistry/arduino-CAN
 Arduino OBD2: https://github.com/sandeepmistry/arduino-OBD2
 
 all libraries are compartible with the RP2040 Core/SDK, you must use a MCU's with bigger Flash Memory, like RP2040 or Arduino Mega 2560. Smaller MCU have not enough Flash Memory!
-
-.... more infos comming soon ....
