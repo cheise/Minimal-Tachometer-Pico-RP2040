@@ -19,7 +19,7 @@ A oscillating quartz 16 Mhz
 
 A Car Power Adapter, normaly used for cellphone charging or a Stepdown Converter 12V --> 5V.
 
-A 3D Printer (optional) or a universal case for the project, use PETG filament, please! ( STL Files in folder "STL" ), use PETG filament, please. 
+A 3D Printer (optional) or a universal case for the project, use PETG filament, please! ( STL Files in folder "STL" ).
 
 and some libraries:
 
