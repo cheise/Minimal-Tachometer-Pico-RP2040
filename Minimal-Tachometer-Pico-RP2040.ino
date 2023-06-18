@@ -2,7 +2,7 @@
 #include <OBD2.h>
 #include <U8g2lib.h>
 
-#define DEMO true
+#define DEMO false
 #define USE_I2C         //uncomment for SPI use !
 
 #define image_width  10
