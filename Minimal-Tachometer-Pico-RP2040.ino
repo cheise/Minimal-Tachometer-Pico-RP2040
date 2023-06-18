@@ -3,7 +3,7 @@
 #include <U8g2lib.h>
 
 #define DEMO false
-#define USE_I2C         //uncomment for SPI use !
+//#define USE_I2C         //uncomment for SPI use !
 
 #define image_width  10
 #define image_height 6
