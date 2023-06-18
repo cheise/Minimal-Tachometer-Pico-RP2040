@@ -2,7 +2,8 @@
 #include <OBD2.h>
 #include <U8g2lib.h>
 
-#define DEMO false
+#define DEMO true
+#define USE_I2C         //uncomment for SPI use !
 
 #define image_width  10
 #define image_height 6
@@ -12,18 +13,22 @@ static unsigned char battery_icon[] U8X8_PROGMEM  = {0x86,0xfd,0xff,0xff,0xfb,0x
 
 #define CS_PIN 17
 #define INT_PIN 20
-#define SCL 10
-#define SI 11
-#define CS_LCD 13
-#define RS 21
-#define RSE 22
 
 #define PID_ENGINE_RPM                0x0C
 #define PID_VEHICLE_SPEED             0x0D
 #define PID_COOLANT_TEMP              0x05
 #define PID_CONTROL_MODULE_VOLTAGE    0x42
 
+#ifdef USE_I2C
+U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/U8X8_PIN_NONE);
+#else
+#define SCL 10
+#define SI 11
+#define CS_LCD 13
+#define RS 21
+#define RSE 22
 U8G2_ST7565_ERC12864_ALT_F_4W_SW_SPI u8g2(U8G2_R0, SCL, SI, CS_LCD, RS, RSE);
+#endif
 
 int rpm = 0; 
 int temp = 0;
@@ -40,8 +45,13 @@ const char DEGREE_SYMBOL[] = { 0xB0, '\0' };
 void setup() {
   Serial.begin(115200);
   delay (100);
+  u8g2.setI2CAddress(0x78);
   u8g2.begin();
-  u8g2.setContrast (70); //LCD contrast
+  #ifdef USE_I2C
+  u8g2.setContrast (0); // LCD contrast IC2
+  #else
+  u8g2.setContrast (70); // LCD contrast SPI
+  #endif
   u8g2.enableUTF8Print();
   draw();
   
